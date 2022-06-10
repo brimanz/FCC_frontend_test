@@ -1,5 +1,10 @@
 import React, {useEffect, useState} from 'react';
 
+
+//components import
+import Header from './components/Header';
+
+
 const App = () =>{
 
   const [quoteInfo, setQuoteInfo] = useState({});
@@ -25,6 +30,8 @@ const App = () =>{
 
   return(
     <div className="App">
+    <Header/>
+
       <div id="quote-box">
         <p id="text">{quoteInfo.text}</p>
         <hr/>
